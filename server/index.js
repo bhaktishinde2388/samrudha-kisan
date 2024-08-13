@@ -10,6 +10,10 @@ app.use(express.json());
 app.use(cors());
 
 
+
+import { signup,login } from "./controllers/user.js";
+
+
 // mongodb connection
 
 const connectDB = async ()=>{
@@ -27,6 +31,13 @@ app.get('/',(req,res)=>{
         message:`welcome to Samrudha Kisan👩‍🌾👨‍🌾 API`
     })
 })
+
+
+
+app.post('/login', login)
+
+app.post("/signup", signup)
+
 
 
 const PORT= process.env.PORT || 5000;
