@@ -1,22 +1,21 @@
 import User from "../models/User.js";
 
-const signup = async (req,res)=>{
-    const {name,email,password,dob} = req.body;
+const postSignup = async (req, res) => {
+  const { fullName, email, password, dob } = req.body;
 
-    const user = new User({
-        name,
-        email,
-        password,
-        dob:new Date(dob)
-    });
-    
- 
-      try {
+  const user = new User({
+    fullName,
+    email,
+    password,
+    dob: new Date(dob)
+  });
+
+  try {
     const savedUser = await user.save();
 
     res.json({
       success: true,
-      message: `Signup successfully...........`,
+      message: `Signup successful`,
       data: savedUser
     })
   }
@@ -29,35 +28,28 @@ const signup = async (req,res)=>{
   }
 }
 
+const postLogin = async (req, res) => {
+  const { email, password } = req.body;
 
+  const user = await User.findOne({
+    email: email,
+    password: password
+  });
 
-// login
-
-const login =async (req,res)=>{
-  
-    const { email, password } = req.body;
-
-    const user = await User.findOne({
-      email: email,
-      password: password
-    });
-  
-    if (user) {
-      return res.json({
-        success: true,
-        message: "Login successful🙂",
-        data: user
-      })
-    }
-    else {
-      return res.json({
-        success: false,
-        message: "Invalid input !!!!!🤨",
-        data: null
-      })
-    }
+  if (user) {
+    return res.json({
+      success: true,
+      message: "Login successful",
+      data: user
+    })
+  }
+  else {
+    return res.json({
+      success: false,
+      message: "Invalid credentials",
+      data: null
+    })
+  }
 }
 
-export {signup,
-    login
-}
+export { postSignup, postLogin }

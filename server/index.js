@@ -5,13 +5,14 @@ import dotenv from "dotenv"
 dotenv.config();
 
 
+
 const app = express();
 app.use(express.json());
 app.use(cors());
 
+import {postLogin, postSignup} from "./controllers/user.js"
 
 
-import { signup,login } from "./controllers/user.js";
 
 
 // mongodb connection
@@ -26,17 +27,17 @@ const connectDB = async ()=>{
 };
 connectDB();
 
+//health route
+
 app.get('/',(req,res)=>{
     res.json({
-        message:`welcome to Samrudha Kisan👩‍🌾👨‍🌾 API`
+        message:`welcome to Expense Samrudha-Kisan`
     })
 })
 
+app.post('/login', postLogin)
 
-
-app.post('/login', login)
-
-app.post("/signup", signup)
+app.post("/signup", postSignup)
 
 
 

@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from "react-dom/client"
 import {RouterProvider, createBrowserRouter} from "react-router-dom"
 import Home from "./views/Home/Home.js"
-import Login from "./views/Login/Login.js"
+import "./global.css"
+import Login from './views/Login/Login.js'
 import SignUp from './views/SignUp/SignUp.js'
-// import "./global.css"
 
 const root=ReactDOM.createRoot(document.getElementById("root"))
 
