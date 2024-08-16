@@ -1,0 +1,74 @@
+.logout
+{
+    position:fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+}
+
+.logout:hover
+{
+   
+   font-weight: bolder;
+   
+}
+.user-greeting
+{
+    margin-top: 40px;
+    font-size: 30px;
+    text-align: center;
+  
+}
+.user-greeting-name
+{
+    font-size: 30px;
+    text-align: center;
+    color: tomato;
+}
+.heading
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* adding img linked container */
+
+.add-img-link-container
+{
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    height: 200px;
+    width: 400px;
+    border: 2px solid black;
+  border-radius: 10px;
+    justify-content: center;
+}
+
+.about
+{
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.add-img
+{
+    
+    box-shadow: 2px 5px 5px 12px 12px solid rgb(176, 70, 176);
+    height: 70px;
+    right: 30px;
+    bottom: 50px;
+  
+}
+.add-img:hover
+{
+    border:1px solid red;
+    box-shadow: 1px 5px 5px 1px rgb(111, 255, 0);
+    transform: rotate(360deg);
+    transition-duration: 1.5s;
+transition: 1sec;
+
+}
