@@ -22,11 +22,11 @@ function Login() {
       
             localStorage.setItem('currentUser', JSON.stringify(response.data.data))
       
-           toast.loading('Redirecting to dashboard...')
+            toast.loading('Redirecting to dashboard...')
       
-//after 3000 this time the page redirect on home page
+//after 3000 this time the page redirect on this page
 setTimeout(()=>{
-    window.location.href = '/'
+    window.location.href = '/farmerpage'
   }, 3000)
  }else{
    toast.error(response.data.message)

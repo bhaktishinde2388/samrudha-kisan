@@ -80,7 +80,7 @@ if(response.data.success){
             onClick={signup}        
             >Register</button>
 
-<Link to='/login' className='auth-link'>Already have an account? Login</Link>
+<Link to='/login' className='signup'>Already have an account? Login</Link>
             </form>
             <Toaster />
         </div>

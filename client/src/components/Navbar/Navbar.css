@@ -1,0 +1,117 @@
+.navbar-container{
+    background-image: radial-gradient( circle 848px at 10% 20%,  rgba(234, 240, 233, 0.9) 0%, rgb(181, 232, 123) 90% );
+    width: 100%;
+   padding:20px;
+  height: 100%;
+   
+}
+@media screen and (max-width:768px)
+  {
+    .navbar-container
+  {
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        padding-left: 10px;
+
+  }
+}
+.logo
+{
+    
+    color:green;
+    font-size: 25px;
+    font-weight: bolder;
+ }
+ @media screen and (max-width:768px)
+  {
+    .logo
+  {
+    font-size: 10px;
+  }
+}
+.navbar-link
+{
+    color: green;
+    font-size: 22px;
+    justify-content: center;
+    padding: 30px ;
+    text-decoration: none;
+    font-weight:600;
+    
+}
+@media screen and (max-width:768px)
+{
+    .navbar-link
+{
+  font-size: 10px;
+  justify-content: left;
+  padding: 10px ;
+}
+}
+
+.seachbar-container
+{
+    position: relative;
+    
+                         
+    
+}
+@media screen and (max-width:768px)
+{
+    .textbox
+{
+    display: none;
+
+}
+}
+.textbox
+{
+    position: absolute;
+   right: 10%;
+   top: -40px;
+   padding: 10px;
+   width: 300px;
+   border-radius: 10px;
+ 
+}
+.search-icon
+{
+  
+    right: 50px;
+    top:auto;
+    height: 25px;
+ }
+ @media screen and (max-width:768px)
+{
+    .search-icon
+{
+    display: none;
+
+}
+}
+
+
+ 
+.theme-switcher
+{
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 25%;
+   margin: 10px;
+   
+}
+
+
+.login-icon
+{
+  height: 40px;
+  position: absolute;
+  right: 20px;
+  
+ 
+   top: 20px;
+   
+}
+/* 
+ */
