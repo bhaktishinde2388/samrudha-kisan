@@ -29,8 +29,8 @@ const router = createBrowserRouter([
 
 {
     path:"*",
-    element:<h1 >Ohh....
-        Page Not Found😑</h1>
+    element:<h1 >404.. Sorry
+        page not found </h1>
 }
 
 ])

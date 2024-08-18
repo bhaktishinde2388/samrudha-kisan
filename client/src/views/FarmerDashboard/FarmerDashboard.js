@@ -25,7 +25,7 @@ function FarmerDashboard() {
         
   return (
     <div>
-         <h1 className='user-greeting'>Hello.... <span className='user-greeting-name'>{user.fullName}😊</span></h1>
+         <h1 className='user-greeting'>Hello.... <span className='user-greeting-name'>🙏{user.fullName}🙏</span></h1>
       <h3 className='heading'>अब हर किसान बढेगा!!👩‍🌾👨‍🌾
         <br>
         </br>
