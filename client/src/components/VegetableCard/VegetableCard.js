@@ -5,13 +5,14 @@ import DeleteImg from "./delete.png"
 import toast, { Toaster } from 'react-hot-toast';
 import axios from "axios"
 import { Link } from 'react-router-dom';
+// import { deleteVegetableId } from '../../../../server/controllers/vegetable';
 
 function VegetableCard({_id,name,image,price,description,loadVegetables}) {
 
 
   
-  const deletePlant  = async (vegetableId)=>{   
-  const response =  await axios.delete(`${process.env.REACT_APP_API_URL}/plant/${vegetableId}`)
+  const deleteVegetable  = async (vegetableId)=>{   
+  const response =  await axios.delete(`${process.env.REACT_APP_API_URL}/vegetable/${vegetableId}`)
   toast.success(response.data.message)
   loadVegetables()
   }
@@ -34,7 +35,7 @@ function VegetableCard({_id,name,image,price,description,loadVegetables}) {
        </Link>
       
        <img src={DeleteImg} className='card-btn delete' onClick={()=>{
-        deletePlant(_id)
+        deleteVegetable(_id)
        }}/>
        </div>
     </div>
