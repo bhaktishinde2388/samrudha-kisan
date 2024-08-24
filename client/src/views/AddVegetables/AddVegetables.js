@@ -36,6 +36,10 @@ function AddVegetables() {
   setPrice("")
   setDescription("")
   setImage("")
+
+  setTimeout(() => {
+    window.location.href = '/'
+  }, 2000)
  }
 
 
