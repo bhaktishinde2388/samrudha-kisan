@@ -47,7 +47,7 @@ const postLogin = async (req, res) => {
     return res.json({
       success: false,
       message: "Invalid credentials",
-      data: null
+      data:null
     })
   }
 }

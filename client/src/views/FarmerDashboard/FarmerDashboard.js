@@ -4,6 +4,7 @@ import { useEffect,useState} from 'react'
 import toast, {Toaster} from 'react-hot-toast'
 import Add from "./add (1).png"
 import {Link} from "react-router-dom"
+import AddVegetables from '../AddVegetables/AddVegetables'
 
 function FarmerDashboard() {
     const [user,setUser]=useState('')
@@ -51,7 +52,7 @@ function FarmerDashboard() {
         </h1>
         
      
-        <Link to="/addTransaction">
+        <Link to="/add">
       <img src={Add} className='add-img'/>
       </Link>
       </div>
