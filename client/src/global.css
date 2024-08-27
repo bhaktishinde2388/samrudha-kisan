@@ -9,16 +9,14 @@
 }
 .form-container
 {
-    width: 500px;
-    height: auto;
-    display: block;
-    margin: 40px auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: 60px;
-    border-radius: 10px;
-    background-color: rgb(238, 190, 100);
-    border: 2px solid gray;
+  margin: 20px auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 400px;
+  background-color: rgb(181, 243, 222);
+  height:auto;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 .btn1
 {
@@ -26,8 +24,18 @@
     margin: auto;
     font-size: 20px;
 border-radius: 10px;
- background-color: rgb(230, 212, 158);
 cursor: pointer;padding: 10px;
+background-color: aquamarine;
+width: 150px;
+
+border-radius: 20px;
+
+color: green;
+font-size: 20px;
+justify-content: center;
+padding: 5px ;
+text-decoration: none;
+font-weight:600;
 }
 .btn1:hover
 {
@@ -45,4 +53,10 @@ body
 {
     text-align: center;
     margin: 40px;
+}
+
+link
+{
+    text-align: center;
+    margin: 10px auto;
 }

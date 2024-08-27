@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Login.css"
+
 import { useState } from 'react'
 import toast, {Toaster} from 'react-hot-toast'
 import axios from 'axios'
@@ -56,9 +56,10 @@ setTimeout(()=>{
             className='btn1'
           onClick={login}
             >Login</button>
+              <Link to='/signup'><span className='link'>Don't have an account? Signup</span></Link>
       </form>
 
-      <Link to='/signup' className='signup' >Don't have an account? Signup</Link>
+    
 
       <Toaster/>
     </div>

@@ -20,7 +20,7 @@ function Navbar({theme}) {
       <span className=" logo"> KISAN👩‍🌾</span> 
         <Link to="/" className="navbar-link">Home</Link>
         <Link to="/About" className="navbar-link">About</Link>
-        <Link to="/Contact" className="navbar-link">Contact us</Link>
+       
         <Link to="/Blog" className="navbar-link">Blog</Link>
        
         {/* <img className="theme-switcher dark" src={DarkTheme}/>
@@ -34,6 +34,8 @@ function Navbar({theme}) {
        
         </div>
         <Link to="/login"> <img className="login-icon" src={FarmerLogin}/></Link>
+
+        <img src={NavImg} className="nav-img"/>
     </div>
   )
 }

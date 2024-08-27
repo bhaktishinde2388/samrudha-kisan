@@ -13,7 +13,7 @@ function AddVegetables() {
   const [image,setImage] =useState("")
 
 
-  const addPlant = async ()=>{
+  const addvegetable = async ()=>{
     toast.loading("Adding Vegetable.......")
     if(!name || !price || !description || !image){
       toast.error("plaese enter all detail")
@@ -52,39 +52,40 @@ function AddVegetables() {
 
 <form className='form-container'>
     <input type='text'
-    placeholder='Enter Plant Name'
-    className='plant-input-box'
+    placeholder='Enter vegetable Name'
+    className='vegetable-input-box'
     value={name}
     onChange={(e)=>setName(e.target.value)}
     />
 
 
 <input type='number'
-    placeholder='Enter Plant Price'
-    className='plant-input-box'
+    placeholder='Enter vegetable Price'
+    className='vegetable-input-box'
     value={price}
     onChange={(e)=>setPrice(e.target.value)}
     />
 
 <input type='text'
-    placeholder='Enter Plant Description'
-    className='plant-input-box'
+    placeholder='Enter vegetable Description'
+    className='vegetable-input-box'
     value={description}
     onChange={(e)=>setDescription(e.target.value)}
     />
 
-<img className='search-plant-img' src={image}></img>
+<img className='search-vegetable-img' src={image}></img>
 <input type='text'
-    placeholder='Enter Plant Image Url'
-    className='plant-input-box'
+    placeholder='Enter vegetable Image Url'
+    className='vegetable-input-box'
     value={image}
     onChange={(e)=>setImage(e.target.value)}
     />
 
 
-<button type='button' onClick={addPlant} className='add-plant-btn'>Add Plant</button>
+<button type='button' onClick={addvegetable} className='add-vegetable-btn'>Add vegetable</button>
 
 </form> 
+
 
 <Link to="/" className='back'><h1>👈Back to Home</h1></Link>
 <Toaster/>

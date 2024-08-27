@@ -5,12 +5,12 @@
 .card-container
 {
     border: 2px solid black;
-    background-image: radial-gradient( circle farthest-corner at 50.7% 54%,  rgba(204,254,152,1) 0%, rgba(229,253,190,1) 92.4% );
+
     text-align: justify;
     color: black;
     font-weight: 600;
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
     z-index: 5;
     height: 450px;
     position: relative;
@@ -26,27 +26,18 @@
     flex-direction: column;
    
 }
-.plant-name{
+.vegetable-name{
     font-size: 35px;
    margin-left: 20px;
     font-family: "Edu AU VIC WA NT Hand", cursive;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    text-align: center;
 }
 
-.plant-category
-{
-    font-size: 20px;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-variation-settings:"wdth" 100;
-      width: 800px;
-      margin-bottom: 20px;
-}
-.plant-price
+
+.vegetable-price
 {
     font-size: 30px;
     font-family: "Open Sans", sans-serif;
@@ -61,7 +52,7 @@
       bottom: 5px;
       right: -250px; */
 }
-.plant-description
+.vegetable-description
 {
  font-size: 20px;
  font-family: "Open Sans", sans-serif;
@@ -72,13 +63,15 @@
    "wdth" 100;
    width: 800px;
    margin-bottom: 20px;
+   padding: 10px;
 }
-.plant-image
+.vegetable-image
 
 {
-    height: 250px;
+    height: 50%;
     width: 100%;
     margin: 10px;
+    padding-right: 20px;
   
 }
 
@@ -124,8 +117,26 @@
 
 .order-btn
 {
-    border: 1px solid green;
-    border-radius: 15px;
-    padding: 5px 10px;
-    font-size: 20px;
+    background-color: aquamarine;
+   
+    position: absolute;
+    bottom: 20px;
+ 
+ width: 150px;
+ 
+    left: 30%;
+    border-radius: 20px;
+  
+   color: green;
+   font-size: 20px;
+   justify-content: center;
+   padding: 5px ;
+   text-decoration: none;
+   font-weight:600;
+  
+}
+.order-btn-comtainer
+{
+    display: block;
+    margin: 0 auto;
 }

@@ -1,15 +1,6 @@
-.form-container
-{
-  margin: 20px;
-  border: 2px solid black;
-  border-radius: 10px;
-  width: 400px;
-  background-image: linear-gradient( 184.1deg,  rgba(249,255,182,1) 44.7%, rgba(226,255,172,1) 67.2% );
-  height: 500px;
-  padding-top: 40px;
-}
 
-.plant-input-box
+
+.vegetable-input-box
 {
     display: block;
     margin: 20px auto;
@@ -23,7 +14,7 @@
   
 }
 
-.add-plant-btn
+.add-vegetable-btn
 {
     padding: 5px 10px;
     border-radius: 10px;
@@ -33,18 +24,18 @@
     margin: 0 auto;
     margin-top: 30px
 }
-.search-plant-img
+.search-vegetable-img
 {
-  height: 400px;
-  width: 500px;
+  height: 300px;
+  width: 300px;
   position: absolute;
-  left: 500px;
-  bottom: 100px;
+  left: 10px;
+  top: 100px;
   margin-left: 100px;
   border-radius: 10px;
 }
 
-.plant-img
+.vegetable-img
 {
   height: 140px;
   width: 40%;
@@ -56,6 +47,7 @@
   text-align: center;
   color: rgb(36, 172, 127);
   position: absolute;
-  left: 50%;
-  bottom: 40px;
+  left: 5%;
+  font-size: 20px;
+  bottom: 90px;
 }

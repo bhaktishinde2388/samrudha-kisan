@@ -80,9 +80,10 @@ if(response.data.success){
             onClick={signup}        
             >Register</button>
 
-<Link to='/login' className='signup'>Already have an account? Login</Link>
+<Link to='/login'  className='link'><span>Already have an account? Login</span></Link>
+<Toaster />
             </form>
-            <Toaster />
+          
         </div>
   )
 }

@@ -16,41 +16,45 @@ function VegetableCard({_id,name,image,price,description,loadVegetables}) {
   const response =  await axios.delete(`${process.env.REACT_APP_API_URL}/vegetable/${vegetableId}`)
   toast.success(response.data.message)
   loadVegetables()
+
+
+
   }
 
 
   return (
-    <div className='main'>
+   
     <div className='card-container'> 
 
     
-     <img className="plant-image" src={image} />
+     <img className="vegetable-image" src={image} />
     
 
     
-        <h1 className="plant-name">{name}</h1>
+        <h1 className="vegetable-name">{name}</h1>
       
       
-        <span className='plant-price'>{price}Rs</span>
-        <p className='plant-description'>{description}</p>
+        <span className='vegetable-price'>{price}Rs</span>
+        <p className='vegetable-description'>{description}</p>
         
        
-       
+        <div className='order-btn-comtainer'> 
+<Link to="/order">
+       <button type='button' className='order-btn'>Order Now</button>
+       </Link>
+       </div>
       <div>
-        <Link to={`/update/${_id}`}>
+        {/* <Link to={`/update/${_id}`}>
        <img src={UpdateImg} className='card-btn update' />
        </Link>
       
        <img src={DeleteImg} className='card-btn delete' onClick={()=>{
         deleteVegetable(_id)
-       }}/>
+       }}/> */}
 
-<Link to="/order">
-       <button type='button' className='order-btn'>Order Now</button>
-       </Link>
        </div>
     </div>
-    </div>
+  
   )
 }
 
