@@ -1,6 +1,7 @@
 import "./Navbar.css"
 import SearchIcon from "./‭icons/search-icon (2).png"
 import FarmerLogin from "./‭icons/avatar.png"
+import NavImg from "../../components/Navbar/img/navbar-background.jpg"
 
 // import DarkTheme from "./‭icons/night-mode (1).png"
 // import LightTheme from "./‭icons/light1.png"
@@ -15,6 +16,7 @@ function Navbar({theme}) {
   // }
   return (
     <div className="navbar-container ">
+     
       <span className=" logo"> KISAN👩‍🌾</span> 
         <Link to="/" className="navbar-link">Home</Link>
         <Link to="/About" className="navbar-link">About</Link>

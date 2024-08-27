@@ -5,6 +5,7 @@ import DeleteImg from "./delete.png"
 import toast, { Toaster } from 'react-hot-toast';
 import axios from "axios"
 import { Link } from 'react-router-dom';
+
 // import { deleteVegetableId } from '../../../../server/controllers/vegetable';
 
 function VegetableCard({_id,name,image,price,description,loadVegetables}) {
@@ -19,16 +20,22 @@ function VegetableCard({_id,name,image,price,description,loadVegetables}) {
 
 
   return (
-    <div className='card-container'>
-     
+    <div className='main'>
+    <div className='card-container'> 
+
+    
+     <img className="plant-image" src={image} />
+    
+
+    
         <h1 className="plant-name">{name}</h1>
       
-       
+      
         <span className='plant-price'>{price}Rs</span>
         <p className='plant-description'>{description}</p>
         
        
-        <img className="plant-image" src={image} />
+       
       <div>
         <Link to={`/update/${_id}`}>
        <img src={UpdateImg} className='card-btn update' />
@@ -37,7 +44,12 @@ function VegetableCard({_id,name,image,price,description,loadVegetables}) {
        <img src={DeleteImg} className='card-btn delete' onClick={()=>{
         deleteVegetable(_id)
        }}/>
+
+<Link to="/order">
+       <button type='button' className='order-btn'>Order Now</button>
+       </Link>
        </div>
+    </div>
     </div>
   )
 }

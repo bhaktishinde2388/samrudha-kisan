@@ -7,6 +7,7 @@ import Login from './views/Login/Login.js'
 import SignUp from './views/SignUp/SignUp.js'
 import FarmerDashboard from './views/FarmerDashboard/FarmerDashboard.js'
 import AddVegetables from './views/AddVegetables/AddVegetables.js'
+import OrderVegetables from './views/OrderVegetables/OrderVegetables.js'
 
 const root=ReactDOM.createRoot(document.getElementById("root"))
 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
 {
     path:"/add",
     element:<AddVegetables/>
+},
+{
+    path:"/order",
+    element:<OrderVegetables/>
 },
 
 {

@@ -27,11 +27,11 @@ function Home() {
 
   return (
    
-    <div>
-      
+   <>
       <Navbar/>
      
-      <h1> Home Page</h1>
+      
+      <div className='main'> 
 
       {
         //applied mapping on plants array
@@ -57,8 +57,10 @@ function Home() {
             />
         })
        }
-    </div>
+   </div>
+   </>
   )
 }
+
 
 export default Home

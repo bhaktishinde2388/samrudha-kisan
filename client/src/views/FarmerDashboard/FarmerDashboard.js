@@ -4,10 +4,14 @@ import { useEffect,useState} from 'react'
 import toast, {Toaster} from 'react-hot-toast'
 import Add from "./add (1).png"
 import {Link} from "react-router-dom"
+import axios from "axios"
 import AddVegetables from '../AddVegetables/AddVegetables'
+import VegetableCard from '../../components/VegetableCard/VegetableCard'
+
 
 function FarmerDashboard() {
     const [user,setUser]=useState('')
+    // const [vegetables, setVegetables] = useState([])
 
 
     //farmer
@@ -23,6 +27,31 @@ function FarmerDashboard() {
           window.location.href='/login'
         }
         },[])
+
+
+
+        // const loadTransactions = async () => {
+        //   if(!user._id){
+        //     return
+        //   }
+        //   toast.loading('Loading transactions...')
+        
+        //   const response = await axios.get(`${process.env.REACT_APP_API_URL}/vegetables?userId=${user._id}`)
+        
+        
+        //   const allTransactions = response.data.data
+        
+        
+        //   toast.dismiss()
+        
+        //   setVegetables(allTransactions)
+        // }
+        
+         
+        //   useEffect(() => {
+        //     loadTransactions()
+        //   }, [user])
+        
         
   return (
     <div>
@@ -56,7 +85,7 @@ function FarmerDashboard() {
       <img src={Add} className='add-img'/>
       </Link>
       </div>
-
+<VegetableCard/>
       <Toaster/>
     </div>
   )
