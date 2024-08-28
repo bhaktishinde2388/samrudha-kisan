@@ -1,0 +1,47 @@
+.about-heading
+{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin-top: 20px;
+    background-color: rgb(208, 206, 202);
+}
+.aboutText
+{
+    text-align: center;
+  font-size: 20px;
+  padding: 50px;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+ border-radius: 50%;
+ 
+}
+.store-img
+{
+    height: 600px;
+    width: 1000px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+   
+}
+@media screen and (max-width:768px)
+  {
+    .store-img
+  {
+
+
+width: 100%;
+margin: 15px;
+    
+  }
+}
