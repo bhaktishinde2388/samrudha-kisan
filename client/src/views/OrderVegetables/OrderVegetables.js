@@ -23,7 +23,7 @@ function OrderVegetables() {
             </div>
           
     </div>
-      <h4 className='home-link'><Link to="home .html" target="_blank" >Go to home page</Link></h4>
+      <h4 className='home-link'><Link to="/" target="_blank" >Go to home page</Link></h4>
       </>
   )
 }
