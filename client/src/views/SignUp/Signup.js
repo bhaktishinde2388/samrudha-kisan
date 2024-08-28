@@ -58,7 +58,7 @@ if(response.data.success){
               />
 
 
-            <input type='email'
+            <input type='text'
              placeholder='Enter Email' 
               className='input-box'
               value={user.email}
@@ -80,7 +80,7 @@ if(response.data.success){
             onClick={signup}        
             >Register</button>
 
-<Link to='/login'  className='link'><span>Already have an account? Login</span></Link>
+<Link to='/login'  className='link'>Already have an account? Login</Link>
 <Toaster />
             </form>
           
