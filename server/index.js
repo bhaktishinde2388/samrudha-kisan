@@ -32,7 +32,7 @@ connectDB();
 
 app.get('/',(req,res)=>{
     res.json({
-        message:`welcome to Expense Samrudha-Kisan`
+        message:`welcome to  Samrudha-Kisan`
     })
 })
 
