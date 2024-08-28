@@ -1,5 +1,5 @@
 import React from 'react'
-
+import SignUp from '../SignUp/SignUp'
 import { useState } from 'react'
 import toast, {Toaster} from 'react-hot-toast'
 import axios from 'axios'

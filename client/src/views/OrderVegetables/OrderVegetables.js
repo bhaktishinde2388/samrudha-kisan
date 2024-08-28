@@ -7,7 +7,7 @@ import "./OrderVegetables.css"
 function OrderVegetables() {
   return (
     <>
-    <div className='order-card  '>
+    <div className='order-card '>
 
 
        <span className='order-heading'> Order Now:</span>
