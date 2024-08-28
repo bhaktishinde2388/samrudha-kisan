@@ -14,9 +14,9 @@ const About = ({abotText}) =>
        
  <br></br>
  SAMRUDHA KISAN is leading supplier of vegetables.
-        Shop No 9, Marketyard, Ganesh Nagar, Sangamner, Maharashtra 422605
-        Market Yard, Sangamner, Sangamner - 422605</p>
-        <img className="store-img" src="https://lh3.googleusercontent.com/p/AF1QipO9eHQUZRejhDK_Yu5Q-Kd30ajeobL09QutEm25=s680-w680-h510"/>
+ Samriddhi Kisan is an app that we have made for vegetable sellers, in which the farmer can upload the photos of his vegetables and the price etc. and then when the customer visits this website, he can click on it and get it.  He can order whatever vegetable he wants, so what happens is that the consumer directly contacts the farmers and buys the vegetables.
+ <br></br> Our main objective behind this is that the farmer should get a good profit for his hard work.</p>
+      
        
             </>
         )

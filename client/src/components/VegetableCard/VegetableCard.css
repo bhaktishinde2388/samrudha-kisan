@@ -20,12 +20,6 @@
    
 }
 
-.main
-{
-    display: flex;
-    flex-direction: column;
-   
-}
 .vegetable-name{
     font-size: 35px;
    margin-left: 20px;
